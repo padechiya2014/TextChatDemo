@@ -18,7 +18,15 @@ namespace TextChatDemo.Models
             factory.Port = 5672;
             factory.HostName = "localhost";
             factory.VirtualHost = "/";
-           
+
+            //return factory.CreateConnection();
+            //ConnectionFactory factory = new ConnectionFactory();
+            //factory.UserName = "rabbitmqsbdc";
+            //factory.Password = "Administration@123";
+            //factory.Port = 22;
+            //factory.HostName = "pub_allow_tcp_port_22";
+            //factory.VirtualHost = "/";
+
             return factory.CreateConnection();
         }
         public bool send(IConnection con, string message, string friendqueue)
