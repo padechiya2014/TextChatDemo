@@ -88,7 +88,7 @@ namespace TextChatDemo.Models
         //    return UserFriends;
         //}
 
-         public List<UserModel> GetFriend(int userId)
+         public List<UserModel> GetAdvisors(int userId)
         {
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();

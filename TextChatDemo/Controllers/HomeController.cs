@@ -88,7 +88,7 @@ namespace TextChatDemo.Controllers
         public JsonResult friendlist()
         {
             int id = Convert.ToInt32(Session["userid"].ToString());
-            List<UserModel> users = db.GetFriend(id);
+            List<UserModel> users = db.GetAdvisors(id);
             List<ListItem> userlist = new List<ListItem>();
             foreach (var item in users)
             {
